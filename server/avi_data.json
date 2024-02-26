@@ -1,0 +1,34 @@
+{
+    "avi_coordinates": [
+      {"avi": 0, "coordinates": [12.95281, 77.70246]},
+      {"avi": 1, "coordinates": [12.95275, 77.70431]},
+      {"avi": 2, "coordinates": [12.95383, 77.70434]},
+      {"avi": 3, "coordinates": [12.95674, 77.70328]},
+      {"avi": 4, "coordinates": [12.95704, 77.6992]},
+      {"avi": 5, "coordinates": [12.95436, 77.68037]},
+      {"avi": 6, "coordinates": [12.95767, 77.67301]},
+      {"avi": 7, "coordinates": [12.95827, 77.66627]},
+      {"avi": 8, "coordinates": [12.9603, 77.66618]},
+      {"avi": 9, "coordinates": [12.97452, 77.65678]},
+      {"avi": 2, "coordinates": [12.98139, 77.65066]},
+      {"avi": 1, "coordinates": [12.98531, 77.64829]},
+      {"avi": 5, "coordinates": [12.9869, 77.64802]},
+      {"avi": 3, "coordinates": [12.98286, 77.63738]},
+      {"avi": 4, "coordinates": [12.98208, 77.63222]},
+      {"avi": 6, "coordinates": [12.97531, 77.62581]},
+      {"avi": 7, "coordinates": [12.9728, 77.62131]},
+      {"avi": 8, "coordinates": [12.97252, 77.61895]},
+      {"avi": 9, "coordinates": [12.97506, 77.60773]},
+      {"avi": 0, "coordinates": [12.97442, 77.60804]},
+      {"avi": 2, "coordinates": [12.96234, 77.70415]},
+      {"avi": 5, "coordinates": [12.95817, 77.70099]},
+      {"avi": 3, "coordinates": [12.95549, 77.69976]},
+      {"avi": 7, "coordinates": [12.95362, 77.69638]},
+      {"avi": 1, "coordinates": [12.95218, 77.69412]},
+      {"avi": 4, "coordinates": [12.95104, 77.68972]},
+      {"avi": 8, "coordinates": [12.94973, 77.6843]},
+      {"avi": 6, "coordinates": [12.94857, 77.67909]},
+      {"avi": 9, "coordinates": [12.94732, 77.67591]}
+    ]
+  }
+  
