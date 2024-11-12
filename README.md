@@ -35,3 +35,41 @@ The backend is responsible for the following tasks:
 - It then queries the MongoDB database to find the AVI data closest to the provided road trail coordinates.
 - The retrieved AVI data is sent back to the frontend in a JSON response.
 
+This is the frontend component of the AVI data processing system, responsible for visualizing the relevant AVI data on a map using Leaflet.js.
+
+## Setup
+
+1. **Prerequisites**:
+  - Node.js installed
+  - React.js knowledge
+
+2. **Install dependencies**:
+   ```bash
+   npm install react-leaflet leaflet @mapbox/polyline axios
+3. **Configure API endpoint**:
+- Open the `App.js` file.
+- Update the API endpoint URL in line 48 to point to your backend server:
+  ```javascript
+  const response = await axios.post(
+    `http://localhost:5000/process_trail`,
+    { road_trail: polyline.decode(route.geometry) }
+  );
+  ```
+
+4. **Start the development server**:
+   ```bash
+   npm start
+## Frontend Functionality
+
+1. **Route Finding**:
+- Users can input start and end coordinates.
+- The app uses the OSRM API to retrieve multiple route options.
+
+2. **AVI Data Retrieval**:
+- For each route, the frontend sends a POST request to the backend.
+- The backend responds with the relevant AVI data, including the average AVI value.
+
+3. **Map Visualization**:
+- Leaflet.js is used to render a map and display the route options.
+- Each route is shown as a polyline, colored based on the average AVI value.
+- Tooltips display the AVI value for each route.
