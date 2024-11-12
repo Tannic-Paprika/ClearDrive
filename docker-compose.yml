@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  server:
+    build: ./server
+    command: python find_relevant_avi.py
+    ports:
+      - "5000:5000"  
+    volumes:
+      - ./server:/app
+    environment:
+      - FLASK_ENV=development
+      - MONGO_URI=mongodb://mongo:27017/cleardrive_db
+    depends_on:
+      - mongo
+
+  client:
+    build: ./client
+    ports:
+      - "3000:80"
+    depends_on:
+      - server
+    environment:
+      - REACT_APP_API_URL=http://localhost:5000
+
+  mongo:
+    image: mongo:5.0
+    volumes:
+      - mongo_data:/data/db
+    ports:
+      - "27017:27017"
+
+volumes:
+  mongo_data:
